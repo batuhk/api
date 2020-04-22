@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@media only screen and (min-width:0px){
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:"title" "time" "weather" "api" "apitwo";
+	grid-gap: 3%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+.grid-item{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+
+.header{
+	grid-area: title;
+	background-color: #27ae60;
+	color: white;
+	font-weight: 900;
+	font-size: 45px;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 2%;
+	padding: 1%;
+	font-family: 'Raleway', sans-serif;
+}
+
+#weather{
+	grid-area: weather;
+	background: #27ae60;
+	border-radius: 10px;
+}
+
+.weather_title{
+	color: white;
+}
+
+#time{
+	grid-area: time;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+    font-size: 35px;
+	padding: 2%;
+	background: #27ae60;
+	border-radius: 10px;
+}
+
+#dateDisplay{
+	font-size: 20px;
+}
+
+#api{
+	grid-area: api;
+	border-radius: 10px;
+	border: 0.5px solid #27ae60;
+}
+
+#api2{
+	grid-area: apitwo;
+	border-radius: 10px;
+	border: 0.5px solid #27ae60;
+}
+
+#catImage{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	width: 50%;
+	height: auto;
+	border: 0.5px solid #27ae60;
+	border-radius: 10px;
+}
+
+#catImages{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	max-width: 80%;
+	margin-bottom: 2%;
+}
+
+#catFacts{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	width: 50%;
+	height: auto;
+	font-family: 'Raleway', sans-serif;
+	text-align: justify;
+	margin-bottom: 2%;
+	font-weight: bold;
+}
+
+.title{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	margin: 0;
+	text-align: center;
+	padding-top: 2%;
+}
+
+.apiText{
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 15px;
+	margin: 2%;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.apiTitle{
+	color: black;
+}
+
+
+h2{
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	font-size: 35px;
+	margin: 0;
+}
+}
+
+@media only screen and (min-width:768px){
+.apiText{
+	font-size: 17px;
+}
+
+.title{
+	font-size: 30px;
+}
+}
+
+@media only screen and (min-width:1366px){
+.grid-container{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas:"title title" "time weather" "api apitwo";
+	grid-gap: 1%;
+	margin-left: 15%;
+    margin-right: 15%;
+}
+
+.title{
+	display: inline;
+}
+
+.apiTitle{
+	color: black;
+}
+
+.tTitle{
+	color: white;
+}
+
+.weathericon{
+	width: 10%;
+	height: auto;
+}
+
+#catImage{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	width: 50%;
+	height: auto;
+	border: 0.5px solid #27ae60;
+	border-radius: 10px;
+}
+
+#catImages{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	max-width: 80%;
+	margin-bottom: 2%;
+}
+
+#catFacts{
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	width: 50%;
+	height: auto;
+	font-family: 'Raleway', sans-serif;
+	text-align: justify;
+}
+
+.apiText{
+	padding: 1%;
+}
+
+}
